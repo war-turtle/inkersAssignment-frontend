@@ -2,7 +2,8 @@ import React from 'react';
 
 const HomeComponent = () => (
   <div>
-    <h1>Inkers.ai</h1>
+    <p className="center-align flow-text">Welcome to Inkers.ai assignment</p>
+    <p className="center-align flow-text">Login to get started</p>
   </div>
 );
 
