@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './navbar.css';
 
 const NavComponent = () => (
   <div>
