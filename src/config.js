@@ -3,7 +3,7 @@ const dev = {
 };
 
 const prod = {
-  url: 'https://inkers-backend.herokuapp.com/',
+  url: 'https://inkers-backend.herokuapp.com',
 };
 
 const config = process.env.REACT_APP_STAGE === 'prod' ? prod : dev;
