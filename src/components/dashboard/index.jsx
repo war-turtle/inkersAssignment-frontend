@@ -3,13 +3,14 @@ import { withRouter } from 'react-router-dom';
 import jwt from 'jsonwebtoken';
 
 class DashboardComponent extends Component {
-    username =''
+    username = ''
 
     componentWillMount() {
       if (window.sessionStorage.getItem('token')) {
         const data = jwt.decode(window.sessionStorage.getItem('token'));
-        if (data.username || data.username === '') {
+        if (data === null || data.username || data.username === '') {
           const { history } = this.props;
+          window.sessionStorage.clear();
           history.push('/login');
         } else {
           this.username = data.username;
