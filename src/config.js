@@ -1,5 +1,5 @@
 const dev = {
-  url: 'http://localhost:5000',
+  url: 'http://localhost:8000',
 };
 
 const prod = {
