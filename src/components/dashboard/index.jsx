@@ -8,7 +8,12 @@ class DashboardComponent extends Component {
     componentWillMount() {
       if (window.sessionStorage.getItem('token')) {
         const data = jwt.decode(window.sessionStorage.getItem('token'));
-        this.username = data.username;
+        if (data.username || data.username === '') {
+          const { history } = this.props;
+          history.push('/login');
+        } else {
+          this.username = data.username;
+        }
       } else {
         const { history } = this.props;
         history.push('/login');
