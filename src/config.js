@@ -1,5 +1,5 @@
 const dev = {
-  url: 'http://localhost:8000',
+  url: 'http://ec2-13-233-146-143.ap-south-1.compute.amazonaws.com:8000',
 };
 
 const prod = {
