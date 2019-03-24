@@ -13,7 +13,6 @@ class PieChart extends Component {
     }).then(res => res.json())
       .then((res) => {
         if (res.code === 200) {
-          toast('Successfully logged in', 'success');
           this.setState({ value: res.data.value });
           this.setState({ labels: res.data.labels });
         } else {

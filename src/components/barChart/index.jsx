@@ -3,14 +3,6 @@ import { Bar } from 'react-chartjs-2';
 import toast from '../../shared/toast';
 import config from '../../config';
 
-// const BarChart = () => (
-//   <div className="container">
-//     <Bar
-//       data={data}
-//     />
-//   </div>
-// );
-
 class BarChart extends Component {
   state = { labels: [], value: [] };
 
