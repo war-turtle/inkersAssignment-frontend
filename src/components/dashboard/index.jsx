@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import jwt from 'jsonwebtoken';
+import BarChart from '../barChart';
+import PieChart from '../pieChart';
 
 class DashboardComponent extends Component {
     username = ''
@@ -30,6 +32,8 @@ class DashboardComponent extends Component {
             {this.username}
           </h3>
           <p className="flow-text center-align">close this window to delete your session</p>
+          <BarChart />
+          <PieChart />
         </div>
       );
     }
